@@ -260,7 +260,7 @@ background:#16a085;
 				<div class="post-info">
 					Di Posting Oleh <b>Ahmad Dani Alfaza</b>
 				</div>
-				
+				<img src="universitas.png">
 				<h1> Daftar nama Mahasiswa </h1>
 				<hr>
 				@if (!empty($mahasiswa_list))
@@ -276,10 +276,10 @@ background:#16a085;
 					<tbody>
 						@foreach($mahasiswa_list as $mahasiswa)
 						<tr>
-							<td>{{ $mahasiswa->nim }}</td>
-							<td>{{ $mahasiswa->nama }}</td>
-							<td>{{ $mahasiswa->jurusan }}</td>
-							<td>{{ $mahasiswa->semester }}</td>
+							<td>{{ $siswa->nim }}</td>
+							<td>{{ $siswa->nama }}</td>
+							<td>{{ $siswa->jurusan }}</td>
+							<td>{{ $siswa->semester }}</td>
 						</tr>
 						@endforeach
 					</tbody>
@@ -290,7 +290,20 @@ background:#16a085;
 
 				<a href="rank.html" class="continue-lendo">Selengkapnya →</a>
 			</div>
-			
+			<div class="conteudo">
+				<div class="post-info">
+					Di Posting Oleh <b>Ahmad Dani Alfaza</b>
+				</div>
+				<img src="sm.jpg">
+				<h1> Jalur Masuk PTN </h1>
+				<hr>
+				<p>
+					Ketika kita duduk di bangku Sekolah Menengah Atas atau sederajat, kita akan mengalami fase kegalauan di mana bingung untuk menentukan universitas mana yang akan kita kejar. Belum lagi dengan jurusan kuliah yang ingin kita ambil. Masa depan kita bisa dimulai dari keputusan sederhana tapi berdampak besar, yaitu mengambil jurusan kuliah yang tepat. Tentunya kita enggak mau dong salah ambil jurusan atau salah masuk universitas.
+
+					Sebagian dari kita saat ini mungkin sedang mengejar masuk Perguruan Tinggi Negeri (PTN).jalur masuk PTN, yang saat ini dikenal ada 3 jalur masuk, yaitu Seleksi Nasional Masuk Perguruan Tinggi Negeri (SNMPTN), Seleksi Bersama Masuk Perguruan Tinggi Negeri (SBMPTN), dan Ujian Mandiri yang diselenggarakan langsung dari pihak PTN terkait.
+				</p>				
+				<a href="jalur.html" class="continue-lendo">Selengkapnya →</a>
+			</div>
 			
 		
 	</div>
