@@ -15,5 +15,10 @@
     return view('welcome');
 });*/
 
-Route::get('/', 'MahasiswaController@mahasiswa');
+Route::get('/', function () {
+    return view('users.layout'); 
+});
+
+Route::resource('biodata', 'BiodataController');
+
 
