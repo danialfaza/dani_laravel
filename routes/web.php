@@ -15,10 +15,17 @@
     return view('welcome');
 });*/
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('users.layout'); 
-});
+});*/
 
 Route::resource('biodata', 'BiodataController');
 
+Route::get('/', 'CrudController@index');
+Route::get('/add', 'CrudController@create');
+Route::post('/store', 'CrudController@store');
+Route::get('/read/{id}', 'CrudController@show');
+Route::get('/edit/{id}', 'CrudController@edit');
+Route::post('/update/{id}', 'CrudController@update');
+Route::get('/delete/{id}', 'CrudController@destroy');
 
