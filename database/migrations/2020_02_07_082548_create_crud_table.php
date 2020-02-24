@@ -15,7 +15,7 @@ class CreateCrudTable extends Migration
     {
         Schema::create('crud', function (Blueprint $table) {
             $table->Increments('id');
-             $table->string('judul');
+            $table->string('judul');
             $table->text('isi');
             $table->string('gambar');
             
